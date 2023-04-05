@@ -11,7 +11,7 @@ func main() {
 	apiKey := os.Getenv("ASSEMBLY_AI_API_KEY")
 
 	client := pkg.NewClient(apiKey)
-	uploadUrl, err := client.UploadFile("test2.wav")
+	uploadUrl, err := client.UploadFile("audit/test2.wav")
 	if err != nil {
 		log.Fatalf("Error While Uplaod File. %v", err)
 	}
